@@ -32,7 +32,7 @@ Github Pages 虽然是 Github 的官方方案，但是只支持纯静态页面�
 
 ### 内置变量
 
-在 Pro 的项目中我们增加了一个环境变量   `ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION`  判断是否是 preview 的环境，如果  `ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION`  我们会注入 Google Analytics 和  umi-plugin-pro 插件，umi-plugin-pro 的插件会加入讲 Pro 的 Api 请求转化为 `https://ant-design-pro.netlify.com/api/xxx` 。并且会将默认的用户权限设置为 admin，让预览用户可以访问任何页面。
+在 Pro 的项目中我们增加了一个环境变量   `ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION`  判断是否是 preview 的环境，如果  `ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION`  我们会注入 Google Analytics 和  umi-plugin-pro 插件，umi-plugin-pro 的插件会加入将 Pro 的 Api 请求转化为 `https://ant-design-pro.netlify.com/api/xxx` 。并且会将默认的用户权限设置为 admin，让预览用户可以访问任何页面。
 
 不推荐在实际项目中打开  `ANT_DESIGN_PRO_ONLY_DO_NOT_USE_IN_YOUR_PRODUCTION`  和使用 `fetch:blocks`  。
 

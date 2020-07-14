@@ -11,7 +11,7 @@ antd@4 rc 发布已经有一段时间了（大概已经两周了），[官网](h
 
 首先对我而言最大的改进在于性能，select ，table 和 tree 已经全面支持了虚拟滚动，作为了早早的使用了 rc-tree 来解决性能问题的人，antd@4 中提供自然是更好不过了，毕竟自己写样式和动态是非常复杂的。
 
-重写的 table 和 from 解决很多遗留的疑难杂症，具体可以查看豆酱老师的 antd@4 系列[文章](https://www.zhihu.com/people/smith-jiang/activities)，里面详细写了心路历程，在 form  中我们不需要使用 `getFieldDecorator` 和 `Form.create` 这两个方法。已 Pro 全区块为例，这两个方法分别出现了 87 和 22 次，在我自己的一个维护项目中找到了 142 个 `getFieldDecorator`，更不用说为了封装组件  `getFieldDecorator`   被当成 props 传来传去的造成的各种复杂性提升了。在 v4 中我们终于可以摆脱它了。
+重写的 table 和 form 解决很多遗留的疑难杂症，具体可以查看豆酱老师的 antd@4 系列[文章](https://www.zhihu.com/people/smith-jiang/activities)，里面详细写了心路历程，在 form  中我们不需要使用 `getFieldDecorator` 和 `Form.create` 这两个方法。已 Pro 全区块为例，这两个方法分别出现了 87 和 22 次，在我自己的一个维护项目中找到了 142 个 `getFieldDecorator`，更不用说为了封装组件  `getFieldDecorator`   被当成 props 传来传去的造成的各种复杂性提升了。在 v4 中我们终于可以摆脱它了。
 
 ![](https://gw.alipayobjects.com/zos/antfincdn/xJ0Xhrkwvu/8EA666B0-76C7-47AC-B999-9EE15D043215.png#align=left&display=inline&height=399&name=&originHeight=1800&originWidth=2880&status=done&style=none&width=639)
 
